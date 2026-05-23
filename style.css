@@ -260,9 +260,12 @@
 
   .nav-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 70px;
+  }
+
+  .nav-container nav {
+    margin-inline-start: auto;
   }
 
   .logo {
@@ -369,6 +372,7 @@
     align-items: center;
     justify-content: center;
     transition: transform var(--transition-fast), border-color var(--transition-fast);
+    margin-inline-start: var(--space-md);
   }
 
   .theme-toggle-btn:hover {
@@ -1125,7 +1129,7 @@
   .menu-toggle {
     display: block;
     z-index: 110;
-    margin-inline-start: auto;
+    margin-inline-start: var(--space-sm);
   }
 
   .nav-links {
@@ -1149,8 +1153,9 @@
     box-shadow: -10px 0 30px var(--shadow-color);
   }
 
-  .nav-links .theme-toggle-btn {
-    margin-block-start: var(--space-sm);
+  .theme-toggle-btn {
+    margin-inline-start: auto;
+    z-index: 110;
   }
 
   .hamburger-active span:nth-child(1) {
