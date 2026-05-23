@@ -1125,6 +1125,7 @@
   .menu-toggle {
     display: block;
     z-index: 110;
+    margin-inline-start: auto;
   }
 
   .nav-links {
